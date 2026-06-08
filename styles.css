@@ -291,6 +291,22 @@ body {
     gap: 20px;
 }
 
+/* 📱 Móviles (1 columna) */
+@media (max-width: 600px) {
+    .logistica-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 📲 Tablets (2 columnas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .logistica-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
 /* Tablets: 2 columnas */
 
 /* Pantallas grandes: 3 columnas */
