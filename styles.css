@@ -367,10 +367,17 @@ body {
     justify-items: center;
 }
 
-/* pantallas grandes yTablets → 2 columnas */
+/* 📲 Tablets → 2 columnas */
 @media (min-width: 600px) {
-        .cards-container {
-            grid-template-columns: repeat(2, 1fr);
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 🖥️ Pantallas grandes → 3 columnas */
+@media (min-width: 1025px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -378,10 +385,10 @@ body {
 
 .card {
     width: 95%;
-    background: rgb(247, 219, 145);
+    background: rgb(5, 5, 5);
     border-radius: 15px;
     overflow: hidden;
-    border: 1px solid #d8d5c4;
+    border: 1px solid #050505;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -389,7 +396,7 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.7);
 }
 
 .card img {
@@ -406,23 +413,24 @@ body {
 .card-content h3 {
     margin: 0;
     font-size: 18px;
-    color: #333;
+    color: #FFCD11;
 }
 
 .card-content p {
     margin-top: 8px;
-    color: #555;
+    color: whitesmoke;
     line-height: 1.4;
 }
 
 .card-footer {
+    text-align: center;
     padding: 12px 15px;
     background: #f7f7f7;
     border-top: 1px solid #ddd;
 }
 
 .card-footer small {
-    color: #777;
+    color: #181717;
 }
 
 
